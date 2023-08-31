@@ -37,7 +37,7 @@ export class Response<TDocument> {
 
 export class ResponseBody<TDocument> {
   // Has to be kept in sync with SearchTemplateResponse
-  took: long
+  took: DurationValue<UnitMillis>
   timed_out: boolean
   _shards: ShardStatistics
   hits: HitsMetadata<TDocument>
